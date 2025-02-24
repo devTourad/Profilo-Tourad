@@ -1,0 +1,571 @@
+:root{
+    --primary-color: #033b4a;
+    --secondar-color:#20c997;
+    --gray: #4a4a4d;
+    --bg-primary: #ecf0f3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+h1,h2{
+    font-family:'Times New Roman', Times, serif;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+
+}
+
+.text-pimary{
+    color: var(--secondar-color);
+}
+.btn-primary{
+    background-color: var(--secondar-color);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover{
+    background-color: #15a076;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+
+header{
+    background-color: var(--bg-primary);
+    height: 100vh;
+
+}
+header .navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+}
+header .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
+
+#home #logo{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 500;
+
+}
+header .navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar nav ul a{
+    margin: 0 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    
+}
+header .header-content .content-text{
+    margin-bottom: 5rem;
+}
+header .header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    height: 100%;
+    padding: 5rem 2rem 0;
+    margin: auto;
+}
+#home .header-content p span{
+    font-weight: 700;
+    font-size: 20px;
+}
+#home .header-content h1{
+    font-size: 60px;
+    color:var(--primary-color);
+    text-shadow: 3px 3px 3px rgba(0, 0green, 0blue, 0.2alpha);
+    margin-top: 10px;
+}
+#home .header-content .title{
+    font-size: 20px;
+    color:var(--primary-color);
+    margin: 10px 0;
+    font-weight: 500;
+}
+#home .header-content .social{
+    margin: 1rem 0 2rem;
+}
+#home .header-content .social a i{
+    font-size: 18px;
+    padding: 10px;
+    background: rgb(38, 20, 138);
+    color:#ffff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#home .header-content .social a i:hover{
+    transform: scale(0.85);
+    transition: all 0.35 ease;
+}
+header .header-content img{
+    max-width: 450px; 
+    border-radius: 0 20px;
+}
+/*about*/
+#about , #skills , #services,#portfolio{
+    padding: 6rem 0;
+}
+#about h2 , #skills h2 , #services h2, #contact h2,#portfolio h2{
+    text-align: center;
+    font-size: 38px;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#about hr, #skills hr , #services hr,#portfolio hr{
+    width: 100px;
+    height: 3px;
+    background-color: var(--secondar-color);
+    border: none;
+    margin: 5px auto 0;
+}
+#about .about-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+#about .about-content .colon1 h3{
+    font-size: 28;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+#about .about-content .colon1 p{
+    color: gray;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+#about .about-content .colon2 p{
+    color: gray;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+/*about*/
+
+/*skil*/
+#skills .row img,#Education .row img {
+    max-width: 40px;
+    
+}
+#skills,#Education{
+    background-color: var(--primary-color);
+}
+#skills h2,#Education h2,#portfolio h2{
+    color:#ffff;
+}
+#skills .skills-content{
+    margin-top: 2rem;
+    background-color: #0f272d;
+}
+#skills .skills-content .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+#skills .skills-content .row .item{
+    color: #ffff;
+    background-color: #000;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#skills .skills-content .row .item:hover{
+    box-shadow: 10px 10px 10px #00f4ab0c;
+    transition: all 0.3s ease;
+}
+/*skil*/
+#services, #contact{
+    background-color: #00f4ab0c;
+}
+#services .heading ,#Education .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .heading img{
+    width: 50px;
+    margin-right: 10px;
+}
+#services .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+    text-align: center;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    
+}
+#services .row .item{
+    background-color: #fff;
+    padding: 30px 15px;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+#services .row .item img{
+    max-width: 250px;
+    border-radius: 0 20px;
+}
+
+
+#services .row .item h3{
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+#services .row .item p{
+    font-size: 14px;
+}
+#services .row .item:hover{
+    transform: scale(1.04);
+}
+/* Portfolio start */
+#portfolio {
+    background-color: var(--primary-color);
+}
+#portfolio .row{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+#portfolio .row .item{
+    background-color: #fff;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    /* max-width: 40rem;
+    max-height: 20rem; */
+}
+#portfolio .row .item:hover{
+    transform: scale(1.03);
+}
+
+#portfolio .row .item img{
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#portfolio .row .item .item-content{
+    padding: 20px 15px 30px;
+}
+#portfolio .row .item .item-content h3{
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+#portfolio .row .item .item-content a{
+    color: var(--secondar-color);
+}
+
+/* Portfolio End */
+#contact{
+    padding: 4rem 0;
+}
+#contact .row{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    column-gap: 2rem;
+}
+#contact .row input, 
+#contact .row textarea{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    outline: none;
+    background-color: #00f4ab0c;
+    border: 1px solid #bbb;
+}
+#contact .row img{
+    border-radius: 0 20px;
+    max-width: 350px;
+}
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: var(--primary-color);
+    font-size: 35px;
+}
+@media(max-width:768px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: right;
+        background: #fff;
+        color:var(--primary-color);
+        gap:0;
+        overflow:hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+        text-align: right;
+    }
+    nav ul li a{
+        padding: 20px;
+        padding-top: 0;
+        text-align: right;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+    }
+    header .header-content .content-text{
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
+    header .header-content img{
+        max-width: 380px;
+        margin: auto;
+    }
+    #home .header-content h1{
+        font-size: 50px;
+    }
+    
+    #about .about-content{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    #skills .skills-content .row,#services .row,#portfolio .row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .education-item .degree {
+        font-size: 1.6rem;
+      }
+    
+      .education-item .institution {
+        font-size: 1.1rem;
+      }
+    
+      .education-item .year {
+        font-size: 0.9rem;
+      }
+    #contact .row{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    #contact .row img{
+        max-width: 250px;
+        margin: auto;
+
+    }
+
+}
+@media(max-width:528px){
+    #home .header-content h1{
+        font-size: 35px;
+    }
+    #home .header-content p span,
+    #home .header-content .title{
+        font-size: 16px;
+    }
+    header .header-content img{
+        margin-top: 2rem;
+    }
+    #about h2 , 
+    #skills h2 ,
+    #services h2, 
+    #contact h2
+    #Education h2{
+        font-size: 30px;
+    }
+    #Education h2{
+        font-size: 40px;
+    }
+    #about .about-content .colon1 h3{
+        font-size: 20px;
+    }
+    #skills .skills-content .row,#portfolio .row{
+        grid-template-columns: 1fr;
+    }
+    #services .row{
+        grid-template-columns: 1fr;
+    }
+
+        .education-list {
+      flex-direction: column;
+    }
+
+    .college-info {
+      flex-direction: column;
+      align-items: center;
+    }
+    .college-details {
+        padding: 15px;
+    }
+    .college-image {
+      width: 300px;
+      height: 100px;
+    }
+  
+    .degree {
+      font-size: 1.4rem;
+    }
+  
+    .institution {
+      font-size: 1rem;
+    }
+  
+    .year {
+      font-size: 0.8rem;
+    }
+
+    #contact .row{
+        padding: 2rem 1rem;
+    }
+ 
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+.education-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+/* College Info Section */
+  .college-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+.college-image {
+    width: 150px;
+    height: 130px;
+    object-fit: cover;
+    /* border-radius: 10PX; */
+    border-radius: 8px;
+}
+  
+.college-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+  
+.degree {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.institution {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+  
+.year {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+  
+
+  /* ===== FOOTER =====*/
+.footer{
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem 0;
+    
+}
+.footer__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.footer__copy{
+    margin-top: 1rem;
+    font-size: .938rem;
+}
+.footer a{
+font-size: 1.5rem;
+color: #ffffff;
+margin: 0 1rem;
+}
+
+
+.btn {
+    height: 35px;
+    width: 35px;
+    background: var(--secondar-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.icone {
+    width: 30px;
+}
+#Education{
+    margin-top: 8rem;
+}
